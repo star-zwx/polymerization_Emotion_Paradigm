@@ -11,6 +11,7 @@ class RestPage : public QWidget {
 public:
     explicit RestPage(QWidget *parent = nullptr);
     void start();  // ← 添加这个声明
+    //int duringTime ;
 
 signals:
     void restFinished();

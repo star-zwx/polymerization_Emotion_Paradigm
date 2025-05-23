@@ -1,0 +1,49 @@
+{
+    "pictures": [
+        {
+            "path": "1.png",
+            "label": "01"
+        },
+        {
+            "path": "25.png",
+            "label": "02"
+        },
+        {
+            "path": "3.png",
+            "label": "03"
+        }
+        
+           ],
+
+    "MarkerInfo": [{
+        "Type": "COM",
+        "PortName": "COM1",
+        "BaudRate": 115200,
+        "DataBits": 8,
+        "Parity": "No",
+        "StopBits": 1,
+        "FlowControl": "No",
+        "PreFix": "01 E1 01 00"
+    }],
+
+    "DisplayConfig":[{
+        "ContinueTime":5000,
+        "RepeatOrNot":"yes",
+        "RepeatTime":3,
+        "RandomPlay" : "yes",
+        "oneplayNum":3
+        
+
+    }
+
+    ],
+
+    "PageConfig":[{
+        "IntroPageText":"这里写介绍页呈现的文字！",
+        
+        "RestTime":20000,
+        "FixationTime":5000
+        
+    }]
+
+}

@@ -12,11 +12,12 @@
 */
 #include "experimentpage.h"
 #include "videoMainpage.h"
+#include"PictureMainPage.h"
 # include <iostream>
 #include <QDebug>
 // 构造函数
 ExperimentPage::ExperimentPage(const QString &fileNameJson ,const QString &flageRadioBtn , QWidget *parent)
-      // 接收参数：json文件所在的文件夹，选择的刺激类型
+// 接收参数：json文件所在的文件夹，选择的刺激类型
 {
 
     //serialConnet();
@@ -38,6 +39,9 @@ ExperimentPage::ExperimentPage(const QString &fileNameJson ,const QString &flage
     else{
         qDebug() << "photo";
         //选择图片播放的模式
+        PictureMainPage *currentPicture = new PictureMainPage(fileNameJson);
+        currentPicture->showFullScreen();
+        this->close();
 
     }
 
